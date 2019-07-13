@@ -27,7 +27,7 @@ public class ConfigMgr {
 
         LOGGER.info("--------------- LOAD CONFIG START ---------------");
 
-        //
+        // 打印指纹
         LOGGER.info("Finer print: " + DisClientComConfig.getInstance().getInstanceFingerprint());
 
         // 导入系统配置

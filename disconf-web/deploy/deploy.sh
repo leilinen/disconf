@@ -92,13 +92,13 @@ fi
 
 
 #
-#
+# 部署后端
 #
 echo "start to copy war"
 cp -rp output/disconf-web.war  $WAR_ROOT_PATH  
 
 #
-#
+# 部署前端
 #
 echo "start to copy static"
 mkdir ${WAR_ROOT_PATH}/html
@@ -106,7 +106,7 @@ cp -rp html/output/* $WAR_ROOT_PATH/html
 
 #
 #
-#
+# 重启服务
 
 cd ${WAR_ROOT_PATH}
 
